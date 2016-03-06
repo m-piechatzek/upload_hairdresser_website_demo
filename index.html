@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hair Stylist Emily Hilton</title>
+    <!-- HOMEPAGE CSS  -->
+    <link href="css/home.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- IMAGE SLIDE BACKGROUND -->
+    <script src="parallex.js"></script>
+    <!--GOOGLE FONT  -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <!--FONT AWESOME  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--JQUERY  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ </head>
+  <body>
+    <script>
+    $(document).ready(function () {
+      $(window).on("load",function() {
+        function fade() {
+          $('.fade, .display').each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+            /* If the object is completely visible in the window, fade it in */
+            if (objectBottom < windowBottom) {
+              if ($(this).css('opacity')==0)
+              {
+                $(this).fadeTo(1000,1);
+              }
+              if($(this).css('display')=='none')
+              {
+                $(this).stop().slideDown(2000);
+              }
+            }
+          });
+        }
+        fade(); //Fade in completely visible elements during page-load
+        $(window).scroll(function() {fade();}); //Fade in elements during scroll
+      });
+    });
+    </script>
+
+    <a name="top"></a>
+      <!-- COVER BANNER  -->
+      <section class="jumbotron" data-speed="6" data-type="background">
+        <div class="container title-position">
+          <h1 id="title">EMILY HILTON DEMO HAIR STYLIST WEBSITE</h1>
+            <!-- <p id="subtitle">LEVEL 2 DESIGNER @ <strong>SPACE SALON</strong></p> -->
+            <p id="subtitle">BY MONIKA PIECHATZEK</p>
+
+
+              <div class="subtitle-group">
+                <a href="https://www.facebook.com/PIECHATZEK.M" title="Monika P" target="_TOP"><i class="fa fa-facebook fa-3x"></i></a>
+                  <i class="fa fa-twitter fa-3x"></i>&nbsp;&nbsp;
+                    <i class="fa fa-linkedin fa-3x"></i>&nbsp;&nbsp;
+                      <a href="https://www.instagram.com/monsta_p/?ref=badge" class="ig-b- ig-b-48"><i class="fa fa-instagram fa-3x "></i></a>
+              </div>
+                <span class="subtitle-bottom">Book @ Space Salon: <a class="white" href="tel:9999999999">555.555.5555</a></span>
+
+
+        </div>
+      </section><!-- COVER BANNER END  -->
+
+    <!--NAV BAR  -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav center">
+            <li><a href="index.html"><h3><span class="text-warning">GALLERY</span></h3></a></li>
+            <li><a href="services.html"><h3>SERVICES</h3></a></li>
+            <li><a href="contact.html"><h3>CONTACT</h3></a></li>
+            <li><a href="about.html"><h3>ABOUT</h3></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  <!--NAV BAR END -->
+
+<div class="row text-center"> <!--ROW-->
+  <div class="container"> <!--CONTAINER-->
+    <!--COLOR SHORTCUT  -->
+    <a href="#color">
+      <div class="col-md-6 mini-color fade" id="mini-color">
+        <div class="sis">
+          <i class="fa fa-paint-brush fa-4x"></i>
+            <p>
+              <h2 class="text-style">COLOR STYLES</h2>
+            </p>
+        </div>
+      </div>
+    </a>
+    <!-- CUT SHORTCUT  -->
+    <a href="#cut">
+      <div class="col-md-6 mini-cut fade">
+        <div class="sis">
+          <i class="fa fa-scissors fa-4x"></i>
+            <p>
+              <h2 class="text-style">CUT STYLES</h2>
+            </p>
+        </div>
+      </div>
+    </a>
+  </div> <!--CONATINER END -->
+</div> <!--ROW END-->
+
+<div class="row text-center"> <!--ROW-->
+  <div class="container"> <!--CONTAINER-->
+    <!--UNIQUE SHORTCUT  -->
+    <a href="#uni">
+      <div class="col-md-6 mini-uni fade">
+        <div class="sis">
+          <i class="fa fa-magic fa-4x"></i>
+            <p>
+              <h2 class="text-style">OMBRE & UNIQUE STYLES</h2>
+            </p>
+        </div>
+      </div>
+    </a>
+    <!--EVENT SHORTCUT  -->
+    <a href="#eve">
+      <div class="col-md-6 mini-eve fade">
+        <div class="sis">
+          <i class="fa fa-star fa-4x"></i> <br>
+            <p>
+              <h2 class="text-style">EVENT STYLES</h2>
+            </p>
+        </div>
+      </div>
+    </a>
+  </div> <!--CONTAINER END-->
+</div> <!-- ROW END -->
+
+
+<!-- SECTION COLORS BANNER -->
+<a name="color"></a>
+  <section id="colors" class="gallery-titles text-center container-size4">
+    <i class="fa fa-paint-brush fa-1x"></i>
+      <div class="container">
+        COLORS
+          <p id="p" class="gallery-subtitles">
+            All images are found on google and are not my property
+          </p>
+      </div>
+  </section> <!--END COLORS BANNER -->
+
+<div class="row center">
+  <div class="container">
+    <section class="gallery-color ">
+      <div class="fade">
+        <img class= "img-thumbnail img-size up" src="img/blond2.jpg" alt="" />
+          <img class= "img-thumbnail img-size down" src="img/blonde3.jpg" alt="" />
+            <img class= "img-thumbnail img-size up" src="img/blonde4.jpg" alt="" />
+              <img class= "img-thumbnail img-size down" src="img/blonde5.jpg" alt="" />
+                <img class= "img-thumbnail img-size up" src="img/blonde6.jpg" alt="" />
+      </div>
+        <div class="fade">
+          <img class= "img-thumbnail img-size up" src="img/blonde7.jpg" alt="" />
+            <img class= "img-thumbnail img-size down" src="img/bru1.jpg" alt="" />
+              <img class= "img-thumbnail img-size up" src="img/bru2.jpg" alt="" />
+                <img class= "img-thumbnail img-size down" src="img/bru3.jpg" alt="" />
+                  <img class= "img-thumbnail img-size up" src="img/bru4.jpg" alt="" />
+        </div>
+          <div class="fade">
+            <img class= "img-thumbnail img-size up" src="img/bru5.jpg" alt="" />
+              <img class= "img-thumbnail img-size down" src="img/bru6.jpeg" alt="" />
+                <img class= "img-thumbnail img-size up" src="img/bru7.jpg" alt="" />
+
+      <img class= "img-thumbnail img-size down" src="img/red1.jpg" alt="" />
+        <img class= "img-thumbnail img-size up" src="img/red2.jpg" alt="" />
+      </div>
+      <div class="fade">
+
+        <img class= "img-thumbnail img-size up" src="img/red3.jpg" alt="" />
+          <img class= "img-thumbnail img-size down" src="img/red4.jpg" alt="" />
+            <img class= "img-thumbnail img-size up" src="img/red5.jpg" alt="" />
+          </div>
+
+  </section>
+</div>
+
+</div>
+
+
+
+<a name="cut"></a> <div class="text-center">
+
+<a href="#top"><i class="fa fa-angle-double-up fa-5x black"></i></a></div>
+<section id="colors" class="gallery-titles text-center container-size3">
+  <i class="fa fa-scissors fa-1x"></i>
+  <div class="container">
+    <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+    CUTS
+    <p id="p" class="gallery-subtitles">
+      All images are found on google and are not my property
+    </p>
+        <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+  </div>
+  <!-- <i class="fa fa-paint-brush fa-1x"></i> -->
+
+</section>
+
+<div class="row ">
+  <div class="container">
+    <div class="fade">
+
+  <img class= "img-thumbnail img-size up" src="img/cut1.jpg" alt="" />
+  <img class= "img-thumbnail img-size down" src="img/cut2.jpg" alt="" />
+
+
+  <img class= "img-thumbnail img-size up" src="img/cut3.jpg" alt="" />
+  <img class= "img-thumbnail img-size down" src="img/cut4.jpg" alt="" />
+
+
+
+
+  <img class= "img-thumbnail img-size up" src="img/cut5.jpg" alt="" />
+</div>
+<div class="fade">
+
+  <img class= "img-thumbnail img-size up" src="img/cut6.jpg" alt="" />
+  <img class= "img-thumbnail img-size down" src="img/cut7.jpg" alt="" />
+  <img class= "img-thumbnail img-size up" src="img/cut8.jpg" alt="" />
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<a name="uni"></a><div class="text-center">
+
+<a href="#top"><i class="fa fa-angle-double-up fa-5x black"></i></a></div>
+<section id="colors" class="gallery-titles text-center container-size2">
+  <i class="fa fa-magic fa-1x"></i>
+  <div class="container">
+    <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+    OMBRE & UNIQUE STYLES
+    <p id="p" class="gallery-subtitles">
+      All images are found on google and are not my property
+    </p>
+        <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+  </div>
+  <!-- <i class="fa fa-paint-brush fa-1x"></i> -->
+
+</section>
+<div class="row">
+  <div class="container">
+    <div class="fade">
+
+      <img class= "img-thumbnail img-size up" src="img/om1.jpg" alt="" />
+        <img class= "img-thumbnail img-size down" src="img/om2.jpg" alt="" />
+          <img class= "img-thumbnail img-size up" src="img/om3.jpg" alt="" />
+            <img class= "img-thumbnail img-size down" src="img/om4.jpg" alt="" />
+              <img class= "img-thumbnail img-size up" src="img/sil1.jpg" alt="" />
+            </div>
+            <div class="fade">
+
+                <img class= "img-thumbnail img-size up" src="img/sil2.jpg" alt="" />
+                  <img class= "img-thumbnail img-size down" src="img/sil3.jpg" alt="" />
+                    <img class= "img-thumbnail img-size up" src="img/buzz1.jpg" alt="" />
+                      <img class= "img-thumbnail img-size down" src="img/buzz2.jpg" alt="" />
+                        <img class= "img-thumbnail img-size up" src="img/buzz3.jpg" alt="" />
+                      </div>
+
+  </div>
+
+</div>
+<!-- <div class="seu"> -->
+<a name="eve"></a><div class="text-center">
+
+<a href="#top"><i class="fa fa-angle-double-up fa-5x black"></i></a></div>
+<section id="colors" class="gallery-titles text-center container-size" data-speed="6" data-type="background">
+  <!-- <div class="container-size"> -->
+    <i class="fa fa-star fa-1x"></i> <br>
+    <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+    EVENT STYLES
+    <p id="p" class="gallery-subtitles">
+      All images are found on google and are not my property
+    </p>
+        <!-- <img class="line" src="pink-divider.png" alt="" /> -->
+  <!-- </div> -->
+</section>
+<!-- </div> -->
+
+
+<div class="row">
+  <div class="container">
+    <div class="fade">
+
+    <img class= "img-thumbnail img-size up" src="img/eve1.jpg" alt="" />
+      <img class= "img-thumbnail img-size down" src="img/eve2.jpg" alt="" />
+        <img class= "img-thumbnail img-size up" src="img/eve3.jpg" alt="" />
+          <img class= "img-thumbnail img-size down" src="img/eve4.jpg" alt="" />
+            <img class= "img-thumbnail img-size up" src="img/eve5.jpg" alt="" />
+          </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="text-center">
+
+<a href="#top"><i class="fa fa-angle-double-up fa-5x black"></i></a></div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- FIRST COLUMN -->
+      <div class="col-md-4 col-xs-4 column">
+            <ul class="nav footer-right">
+            <h2></h2>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+      </div> <!--col end -->
+
+  <!-- MIDDLE COLUMN -->
+      <div class="col-md-4 col-xs-4 column">
+        <ul class="nav">
+          <li>
+            <img class="img-size-foot loca" src="img/loca.png" alt="" />
+              <address class="">
+                <strong>528 West Broadway</strong><br>
+                Vancouver, BC <br>
+                V5Z 1E9
+              </address>
+          </li>
+          <li>
+            <img class="img-size-foot" src="img/phone.png" alt="" />
+
+
+            <!-- <i class="fa fa-phone fa-3x"></i> -->
+
+              <span class="foot-text"><a class="white" href="tel:5555555555">555.555.5555</a></span>
+<!-- 604.681.1444 -->
+          </li>
+          <li class="loca">
+            <img class="img-size-foot loca" src="img/envo.png" alt="" />
+            <!-- <i class="fa fa-envelope fa-3x"></i><br> -->
+
+              <span class="foot-text">emily@spacesalon.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- LAST COLUMN -->
+      <div class="col-md-4 col-xs-4 text-right column">
+        <h2>Emily Hilton @ Space Salon</h2>
+          <p class="foot-text">
+            Book your appointment through Space Salon
+          </p>
+            <!-- <img class="img-size-foot" src="insta.png" alt="" /> -->
+            <!-- <div class="img-circle insta"> -->
+
+<a href="https://www.facebook.com/PIECHATZEK.M" title="Monika P" target="_TOP"><i class="fa fa-facebook fa-3x"></i></a>
+            <i class="fa fa-twitter fa-3x"></i>&nbsp;&nbsp;
+            <i class="fa fa-linkedin fa-3x"></i>&nbsp;&nbsp;
+            <a href="https://www.instagram.com/monsta_p/?ref=badge" class="ig-b- ig-b-48"><i class="fa fa-instagram fa-3x "></i>
+
+
+
+
+          <!-- </div> -->
+      </div>
+    </div><!--row end-->
+  </div>
+</footer>
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
